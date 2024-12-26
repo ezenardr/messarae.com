@@ -24,18 +24,18 @@ export default function BlogPost({ style, showItem, showPagination }: BlogPostPr
     const [pages, setPages] = useState<number>(Math.ceil(data.length / limit))
 
     useEffect(() => {
+        const createPagination = (): void => {
+            // set pagination
+            const arr: number[] = new Array(Math.ceil(data.length / limit))
+              .fill(undefined)
+              .map((_, idx) => idx + 1)
+
+            setPagination(arr)
+            setPages(Math.ceil(data.length / limit))
+        }
         createPagination()
-    }, [limit, pages, data.length])
+    }, [ limit, pages])
 
-    const createPagination = (): void => {
-        // set pagination
-        const arr: number[] = new Array(Math.ceil(data.length / limit))
-            .fill(undefined)
-            .map((_, idx) => idx + 1)
-
-        setPagination(arr)
-        setPages(Math.ceil(data.length / limit))
-    }
 
     const startIndex: number = currentPage * limit - limit
     const endIndex: number = startIndex + limit

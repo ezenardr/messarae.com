@@ -7,6 +7,7 @@ import "/public/assets/css/main.css"
 
 import type { Metadata } from "next"
 import { Urbanist, Playfair_Display, DM_Mono } from "next/font/google"
+import React from "react";
 
 const urbanist = Urbanist({
 	weight: ['300', '400', '500', '600', '700'],
@@ -28,8 +29,8 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-	title: "Zelio - Personal Portfolio Template",
-	description: "Zelio - Personal Portfolio Template",
+	title: "Messarae - Personal Portfolio",
+	description: "Façonner des histoires avec passion : Découvrez le travail de Messara",
 }
 
 export default function RootLayout({
@@ -38,7 +39,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en" data-bs-theme="dark">
+		<html lang="fr" data-bs-theme="light">
 			<body className={`${urbanist.variable} ${playfair_display.variable} ${dmMono.variable}`}>{children}</body>
 		</html>
 	)
