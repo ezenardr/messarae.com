@@ -28,7 +28,7 @@ export async function POST(req:NextRequest) {
     await transporter.sendMail({
       from: username,
       to: client,
-      subject: `${subject}`,
+      subject: `Nouvelle soumission du formulaire de contact`,
       html: `<!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -107,9 +107,9 @@ export async function POST(req:NextRequest) {
 </html>
 `,
     });
-    return NextResponse.json({ message: 'Réservation Réussie' });
+    return NextResponse.json({ message: 'Message Envoyé' });
   } catch (error) {
     console.log(error);
-    NextResponse.json({ message: 'Failed' });
+    return NextResponse.json({ message: 'Failed' });
   }
 }

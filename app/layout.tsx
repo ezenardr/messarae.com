@@ -8,6 +8,7 @@ import "/public/assets/css/main.css"
 import type { Metadata } from "next"
 import { Urbanist, Playfair_Display, DM_Mono } from "next/font/google"
 import React from "react";
+import {Toaster} from "sonner";
 
 const urbanist = Urbanist({
 	weight: ['300', '400', '500', '600', '700'],
@@ -40,7 +41,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="fr" data-bs-theme="light">
-			<body className={`${urbanist.variable} ${playfair_display.variable} ${dmMono.variable}`}>{children}</body>
+			<body className={`${urbanist.variable} ${playfair_display.variable} ${dmMono.variable}`}><Toaster richColors={true} position={'top-right'}/>{children}</body>
 		</html>
 	)
 }
