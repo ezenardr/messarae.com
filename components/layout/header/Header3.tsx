@@ -29,7 +29,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 									{/*	<Link className="nav-link" href="#portfolio">Portfolio</Link>*/}
 									{/*</li>*/}
 									<li className="nav-item">
-										<Link className="nav-link" href={"#blog"}>Blog</Link>
+										<Link className="nav-link" href={"https://blog.messarae.com"} target={'_blank'}>Blog</Link>
 									</li>
 									<li className="nav-item">
 										<Link className="nav-link" href={"#contact"}>Contact</Link>

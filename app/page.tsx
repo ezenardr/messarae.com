@@ -388,13 +388,17 @@ export default function Home3() {
 												<i className="ri-mail-fill text-primary-3 h6 fw-medium" />
 												<span className="text-300 fs-6 ms-2">ezenardmessara98@gmail.com</span>
 											</Link>
-										</div>
-										<div className="d-flex flex-column gap-2 position-relative z-1">
 											<Link href="https://www.instagram.com/ezenardmessara/">
 												<i className="ri-instagram-fill text-primary-3 h6 fw-medium" />
 												<span className="text-300 fs-6"> ezenardmessara</span>
 											</Link>
 										</div>
+										{/*<div className="d-flex flex-column gap-2 position-relative z-1">*/}
+										{/*	<Link href="https://www.instagram.com/ezenardmessara/">*/}
+										{/*		<i className="ri-instagram-fill text-primary-3 h6 fw-medium" />*/}
+										{/*		<span className="text-300 fs-6"> ezenardmessara</span>*/}
+										{/*	</Link>*/}
+										{/*</div>*/}
 									</div>
 									<div className="position-relative z-2 mt-4">
 										<h5 className="text-dark mb-3">Let’s connect</h5>

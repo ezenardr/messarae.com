@@ -16,7 +16,7 @@ export default function Footer3() {
 								{/*<a href={"#resume"} className="fs-6"> Resume </a>*/}
 								<a href={"#services"} className="fs-6"> Services </a>
 								{/*<a href={"#portfolio"} className="fs-6"> Portfolio </a>*/}
-								<a href={"#blog"} className="fs-6"> Blog </a>
+								<a href={"https://blog.messarae.com"} target={'_blank'} className="fs-6"> Blog </a>
 								<a href={"#contact"} className="fs-6"> Contact </a>
 							</div>
 							<div className="navbar-social d-flex justify-content-center gap-3">
