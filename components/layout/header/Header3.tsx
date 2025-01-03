@@ -59,7 +59,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 							</div>
 						</div>
 					</div>
-					{/*<ThemeSwitch />*/}
+					<ThemeSwitch />
 				</nav>
 				{/* offCanvas-menu */}
 				<OffCanvas isOffCanvas={isOffCanvas} handleOffCanvas={handleOffCanvas} />

@@ -32,6 +32,7 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
 	title: "Messarae - Personal Portfolio",
 	description: "Façonner des histoires avec passion : Découvrez le travail de Messara",
+	metadataBase : new URL('https://messarae.com')
 }
 
 export default function RootLayout({
@@ -40,7 +41,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="fr" data-bs-theme="light">
+		<html lang="fr" data-bs-theme="dark">
 			<body className={`${urbanist.variable} ${playfair_display.variable} ${dmMono.variable}`}><Toaster richColors={true} position={'top-right'}/>{children}</body>
 		</html>
 	)
